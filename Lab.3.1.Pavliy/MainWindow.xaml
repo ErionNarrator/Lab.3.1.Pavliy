@@ -1,0 +1,28 @@
+﻿<Window x:Class="Lab._3._1.Pavliy.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab._3._1.Pavliy"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Margin="10">
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <TextBlock Text="Point 1 (x, y):" VerticalAlignment="Center"/>
+                <TextBox x:Name="a" Width="50"/>
+                <TextBox x:Name="b" Width="50"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <TextBlock Text="Point 2 (x, y):" VerticalAlignment="Center"/>
+                <TextBox x:Name="c" Width="50"/>
+                <TextBox x:Name="d" Width="50"/>
+            </StackPanel>
+
+            <Button x:Name="CalculateButton" Content="Calculate" Click="CalculateButton_Click" Width="100" Margin="0,0,0,10"/>
+
+            <TextBlock x:Name="result" TextWrapping="Wrap"/>
+        </StackPanel>
+    </Grid>
+</Window>
